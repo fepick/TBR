@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "SRC-0001",
+      "kind": "source",
+      "status": "recorded",
+      "title": "프로젝트 목적에 대한 사용자 원문",
+      "path": "planning/inbox/SRC-0001-project-purpose.md",
+      "summary": "RPG 기획 전용 저장소, 엔진·AI 모델 독립성, 일반 파일 형식, 세션을 넘는 색인이라는 사용자 요구.",
+      "tags": ["원문", "프로젝트 목적", "RPG", "엔진 독립", "모델 독립", "색인"],
+      "source_ids": [],
+      "related_ids": ["PRJ-0001", "QUE-0001"],
+      "created": "2026-09-17",
+      "updated": "2026-09-17"
+    },
+    {
+      "id": "PRJ-0001",
+      "kind": "project",
+      "status": "confirmed",
+      "title": "프로젝트 기준",
+      "path": "planning/project.md",
+      "summary": "RPG 기획만 담당한다는 확정 범위와 사용자 입력의 파일화, 설계 무결성 및 지속적 검색 목표.",
+      "tags": ["범위", "프로젝트 원칙", "기획", "무결성"],
+      "source_ids": ["SRC-0001"],
+      "related_ids": ["QUE-0001"],
+      "created": "2026-09-17",
+      "updated": "2026-09-17"
+    },
+    {
+      "id": "QUE-0001",
+      "kind": "question",
+      "status": "open",
+      "title": "미정 사항",
+      "path": "planning/questions.md",
+      "summary": "명시적으로 미정인 엔진·아트스타일·구현과 아직 전달받지 않은 게임 기획 영역.",
+      "tags": ["미정", "질문", "엔진", "아트스타일", "세부 구현"],
+      "source_ids": ["SRC-0001"],
+      "related_ids": ["PRJ-0001"],
+      "created": "2026-09-17",
+      "updated": "2026-09-17"
+    }
+  ]
+}
