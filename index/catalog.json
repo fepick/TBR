@@ -23,9 +23,9 @@
       "summary": "RPG 기획만 담당한다는 확정 범위와 사용자 입력의 파일화, 설계 무결성 및 지속적 검색 목표.",
       "tags": ["범위", "프로젝트 원칙", "기획", "무결성"],
       "source_ids": ["SRC-0001"],
-      "related_ids": ["QUE-0001"],
+      "related_ids": ["QUE-0001", "SPEC-0001"],
       "created": "2026-09-17",
-      "updated": "2026-09-17"
+      "updated": "2026-09-18"
     },
     {
       "id": "QUE-0001",
@@ -33,12 +33,77 @@
       "status": "open",
       "title": "미정 사항",
       "path": "planning/questions.md",
-      "summary": "명시적으로 미정인 엔진·아트스타일·구현과 아직 전달받지 않은 게임 기획 영역.",
-      "tags": ["미정", "질문", "엔진", "아트스타일", "세부 구현"],
-      "source_ids": ["SRC-0001"],
-      "related_ids": ["PRJ-0001"],
+      "summary": "엔진·아트스타일·액션 및 스탯 보정·도감의 열린 질문과 접두어 개수·확률 확인의 해결 기록.",
+      "tags": ["미정", "질문", "엔진", "아트스타일", "세부 구현", "아이템", "스탯", "접두어", "도감", "조작감"],
+      "source_ids": ["SRC-0001", "SRC-0002", "SRC-0003", "SRC-0004"],
+      "related_ids": ["PRJ-0001", "SPEC-0001", "SPEC-0002"],
       "created": "2026-09-17",
-      "updated": "2026-09-17"
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "SRC-0002",
+      "kind": "source",
+      "status": "recorded",
+      "title": "아이템과 조작감에서 설계를 추론하라는 요청",
+      "path": "planning/inbox/SRC-0002-inference-request.md",
+      "summary": "아이템 효과와 조작감 아이디어를 기반으로 스탯·아이템·조작 구현을 유추하라는 사용자 요청.",
+      "tags": ["원문", "추론", "아이템", "스텟", "스탯", "조작감", "액션성"],
+      "source_ids": [],
+      "related_ids": ["SPEC-0002"],
+      "created": "2026-09-18",
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "SRC-0003",
+      "kind": "source",
+      "status": "recorded",
+      "title": "아이템 분류와 접두어에 대한 사용자 원문",
+      "path": "planning/inbox/SRC-0003-items-and-prefixes.md",
+      "summary": "번호가 있는 특별한 아이템과 일반 아이템, 도감 관리, 드롭 접두어 확률, 상점 예외, 음수 스탯 허용.",
+      "tags": ["원문", "아이템", "넘버링", "도감", "접두어", "드롭", "상점", "음수"],
+      "source_ids": [],
+      "related_ids": ["SPEC-0001", "SPEC-0002"],
+      "created": "2026-09-18",
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "SPEC-0001",
+      "kind": "spec",
+      "status": "confirmed",
+      "title": "아이템 분류와 접두어 규칙",
+      "path": "planning/design/items/classification-and-prefixes.md",
+      "summary": "특별한 아이템의 번호 범위와 도감, 일반 아이템, 긍정·부정 접두어 확률과 예시, 상점 구매 예외 및 음수 스탯 허용.",
+      "tags": ["아이템", "넘버링", "도감", "접두어", "드롭", "상점", "스탯", "스텟", "음수"],
+      "source_ids": ["SRC-0003", "SRC-0004"],
+      "related_ids": ["SPEC-0002", "QUE-0001"],
+      "created": "2026-09-18",
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "SPEC-0002",
+      "kind": "spec",
+      "status": "proposed",
+      "title": "아이템·스탯 구조 추론안",
+      "path": "planning/design/items/item-stat-inference.md",
+      "summary": "확정된 접두어 분포에 따른 처리 흐름, 기본 정의와 획득 개체 분리, 스탯 보정과 도감 연결 제안. 조작감은 추가 입력 필요.",
+      "tags": ["추론", "아이템", "스탯", "스텟", "접두어", "확률", "획득", "도감", "조작감"],
+      "source_ids": ["SRC-0002", "SRC-0003", "SRC-0004"],
+      "related_ids": ["SPEC-0001", "QUE-0001"],
+      "created": "2026-09-18",
+      "updated": "2026-09-18"
+    },
+    {
+      "id": "SRC-0004",
+      "kind": "source",
+      "status": "recorded",
+      "title": "접두어 확률 확인과 별도 브랜치 게시 요청",
+      "path": "planning/inbox/SRC-0004-prefix-confirmation.md",
+      "summary": "접두어 최대 하나와 긍정·부정·없음의 배타적 분포 확인 및 main과 분리된 작업 브랜치 게시 요청.",
+      "tags": ["원문", "확정", "접두어", "확률", "브랜치", "게시"],
+      "source_ids": [],
+      "related_ids": ["SPEC-0001", "SPEC-0002", "QUE-0001"],
+      "created": "2026-09-18",
+      "updated": "2026-09-18"
     }
   ]
 }
